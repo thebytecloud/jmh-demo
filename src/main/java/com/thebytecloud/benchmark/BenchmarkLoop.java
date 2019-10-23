@@ -20,10 +20,10 @@ import java.util.concurrent.TimeUnit;
 //@Measurement(iterations = 8)
 public class BenchmarkLoop {
 
-    @Param({"10000000"})
+    @Param({"100"})
     private int N;
 
-    private List<String> DATA_FOR_TESTING;
+    private List<String> DATA_FOR_TESTING =  createData();
 
     public static void main(String[] args) throws RunnerException {
 
